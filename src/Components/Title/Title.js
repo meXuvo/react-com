@@ -50,16 +50,13 @@ class Title extends Component{
                output = (
                    <div className="title">
                        <input
-                           className="form-control"
+                           className="form-control mx-4 my-5"
                            type="text"
                            onBlur={(event) => this.changeFocus(event)}
                            onChange={(event) => this.inputChange(event)}
                            onKeyPress={(event)=>this.keyPress(event)}
                            value={this.state.title}
-
-
                        />
-
                    </div>
                )
 
@@ -67,7 +64,7 @@ class Title extends Component{
                output = (
                        <div className="justify-content-center">
                            <div className="d-flex title ">
-                               <h1 className="display-4">{this.state.title}</h1>
+                               <h1 className="display-4 mx-5">{this.state.title}</h1>
                                <span onClick={(event) => this.editHandle()} className="edit-icon ml-4 mt-2">
                                    <i className="fas fa-pencil-alt"></i>
                                </span>
